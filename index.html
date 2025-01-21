@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refacciones Tech - Conócenos</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <!-- Barra lateral con botones de navegación -->
+    <div class="side-navigation">
+        <button onclick="scrollToSection('inicio')">Inicio</button>
+        <button onclick="scrollToSection('quienes-somos')">Quiénes Somos</button>
+        <button onclick="scrollToSection('ubicacion')">Ubicación</button>
+        <button onclick="scrollToSection('contacto')">Redes Sociales</button>
+    </div>
+
+    <!-- Resto del contenido del cuerpo permanece igual -->
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Yesmos.com</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                    <li><a href="#contacto">Redes Sociales</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Secciones -->
+    <section id="inicio" class="section">
+        <div class="content">
+            <h2>Bienvenido a <span class="highlight">yesmos.com</span></h2>
+            <p>Tu mejor opción en soluciones tecnológicas.</p>
+        </div>
+    </section>
+
+    <section id="quienes-somos" class="section">
+        <div class="content">
+            <h2>Quiénes Somos</h2>
+            <p>
+                En yesmos nos apasiona la tecnología. Somos una empresa con más de 10 años de experiencia
+                proporcionando soluciones tecnológicas innovadoras y confiables.
+            </p>
+        </div>
+    </section>
+
+    <section id="ubicacion" class="section">
+        <div class="content">
+            <h2>Ubicación</h2>
+            <p>Estamos ubicados en Calle Constitución #206, enfrente del "Hotel Latino".</p>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?..."></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section">
+        <div class="content">
+            <h2>Síguenos</h2>
+            <p>Conéctate con nosotros a través de nuestras redes sociales.</p>
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>&copy; 2024 yesmos. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script para desplazamiento suave con botones -->
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>
